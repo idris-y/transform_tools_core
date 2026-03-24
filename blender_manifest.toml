@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "transform_tools_core_yiws"
+version = "0.9.6"
+name = "Transform Tools Core"
+tagline = "Advanced gizmo control & precision transformations for Blender"
+maintainer = "Yasser Idris <idris.vy@gmail.com>"
+type = "add-on"
+
+website = "https://idris-y.github.io/transform-tools/"
+
+tags = ["3D View", "Modeling", "Mesh", "Object", "User Interface"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+copyright = [
+  "2026 Yasser Idris",
+]
