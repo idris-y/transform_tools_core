@@ -207,6 +207,7 @@ class TTCYIWS_OT_Transformation(Operator):
     
     first_execution: bool = True
     cursor_matrix = Matrix.Identity(4)
+
     def execute(self, context):
         st = context.window_manager.ttc_yiws_st
 
@@ -275,7 +276,7 @@ class TTCYIWS_OT_Transformation(Operator):
 
         # applying the transformation matrix to the 3D cursor
         if selected_obj:  # check if cursor need to be transformed with selected elements from the previous gizmo position
-            context.scene.cursor.matrix = prev_matrix
+            context.scene.cursor.matrix = current_matrix
         else:  # cursor will be transformed from its current position
             context.scene.cursor.matrix = transform_matrix @ self.cursor_matrix  # update the 3D cursor matrix
             
